@@ -1,7 +1,5 @@
 # Log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+*.log*
 
 # Test
 coverage
@@ -19,12 +17,10 @@ dist
 # IDE
 .idea
 .vscode
+.vs
 
+# OS X
 .DS_Store
-
-# Umi
-.umi
-.umi-production
 
 # Local
 local.config.ts
