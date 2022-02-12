@@ -12,6 +12,8 @@
 - tsc: typescript compiler
 
 ## 3. 编译到指定输出目录 --outDir
-```pnpm tsc my-code.ts --outDir js```
+```pnpx tsc my-code.ts --outDir js```
 - 输出到 js 目录下
 
+## 4. 生成 ts 配置文件
+```pnpx tsc tsc --init```

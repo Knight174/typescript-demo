@@ -41,20 +41,6 @@ const arr4: User[] = [{
   age: 18
 }];
 
-// class
-class Teacher {
-  name: string;
-  age: number;
-}
-
-const teacher: Teacher[] = [
-  new Teacher(),
-  {
-    name: 'Eric',
-    age: 18
-  }
-];
-
 // tuple
 const tup: [number, number] = [1, 2];
 // csv
