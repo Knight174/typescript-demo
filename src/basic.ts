@@ -28,7 +28,41 @@ const obj: object = {
 }
 
 const arr: number[] = [1, 2];
-const tup: [number, number] = [1, 2]; // tuple
+const arr2: (number | string)[] = [1, '2'];
+const arr3: {name: string, age: number}[] = [{
+  name: 'Eric',
+  age: 18
+}]
+
+// 自定义类型
+type User = {name: string, age: number};
+const arr4: User[] = [{
+  name: 'Eric',
+  age: 18
+}];
+
+// class
+class Teacher {
+  name: string;
+  age: number;
+}
+
+const teacher: Teacher[] = [
+  new Teacher(),
+  {
+    name: 'Eric',
+    age: 18
+  }
+];
+
+// tuple
+const tup: [number, number] = [1, 2];
+// csv
+const teachers: ([string, string, number])[] = [
+  ['Eric', 'male', 18],
+  ['Eric2', 'female', 20],
+  ['Eric3', 'male', 21]
+]
 
 // 其他 case
 interface Person {
