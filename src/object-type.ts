@@ -20,7 +20,7 @@ const func3 = (x: number): number => x;
 // object
 const obj: object = {};
 
-// 函数参数的类型限制
+// 函数参数如果是对象类型
 function getStudentName (student: {name: string, age: number, level?: number}) {
   return student.name;
 }
