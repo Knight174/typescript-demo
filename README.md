@@ -17,3 +17,12 @@
 
 ## 4. 生成 ts 配置文件
 ```pnpx tsc tsc --init```
+- 帮助校验代码
+
+## 5. ts-node
+https://www.npmjs.com/package/ts-node
+> pnpm add -D ts-node
+
+> pnpm add -D tslib @types/node
+
+```pnpx ts-node my-code.ts```

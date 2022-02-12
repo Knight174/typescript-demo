@@ -83,6 +83,7 @@ const book = {
 
 const bookName = getBookName(book);
 setBookName(book, 'TS Book');
+console.log(bookName);
 
 // 多种基础类型
 let temp: number | string = 1;
