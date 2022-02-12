@@ -66,10 +66,37 @@ const teachers: ([string, string, number])[] = [
 
 // 其他 case
 interface Person {
-  name: 'string'
+  name: string;
+  age: number;
 }
 const rawData = '{"name": "dell"}';
 const newData: Person = JSON.parse(rawData);
+
+// 函数参数处理
+interface Book {
+  // readonly name: string;
+  name: string;
+  price?: number;
+  [propName: string]: any;
+  say?(): string;
+}
+
+function getBookName (book: Book) {
+  return book.name;
+}
+
+function setBookName (book: Book, name: string): void {
+  book.name = name;
+}
+
+const book = {
+  name: 'typescript book',
+  price: 299,
+  author: 'Microsoft'
+}
+
+const bookName = getBookName(book);
+setBookName(book, 'TS Book');
 
 // 多种基础类型
 let temp: number | string = 1;
